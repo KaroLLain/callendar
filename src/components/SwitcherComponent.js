@@ -384,8 +384,8 @@ export default class ScheduleApp extends React.PureComponent {
   constructor (props) {
     super(props)
     this.state = {
-      // data: [],
-      data: appointments,
+      data: [],
+      // data: appointments,
       // currentDate: '2018-06-27',
       currentViewName: 'Month',
       locale: 'pl-PL',
@@ -543,8 +543,6 @@ export default class ScheduleApp extends React.PureComponent {
     startDayHour,
     endDayHour
     } = this.state;
-    
-    console.log(data); // Sprawdź, czy dane są tutaj poprawnie
     
     return (
     <React.Fragment>
